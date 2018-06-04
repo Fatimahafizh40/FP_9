@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AngularJS - Tutorial</title>
+	<title>Kontak</title>
 	<script type="text/javascript" src="js/angular.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 </head>
@@ -16,9 +16,7 @@
       <h1 style="color: white;"><p class="text-center">GALLION</p></h1> 
     </div>
     <div class="col-sm">
-    	<h2 style ="background-image: 
-    	<img class="card-img-top" src="assets/img/aksesoris/river-island-9335-1093451-1.jpg" alt="Card image cap" style="margin-left: 60px;">
-    </h2>
+   
 
      
     </div>
@@ -70,7 +68,7 @@
 </nav>
   </div>
   
- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+ <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background-color: lightgrey;">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -107,29 +105,37 @@
 <br>
 <br>
 <br>
+<div style="margin-left: 40px;">
+	<center>
+<p>KONTAK GALLION</p> 
+<P>Untuk semua kritik dan saran, langsung tulis disini.</P>
+</center>
 <form name="userForm">
 	<center>
 	<table>
 		<tr>
-			<td>Name</td><td>:</td>
+			<td>Nama</td><td>:</td>
 			<td><input type="text" name="nameInput" ng-model="user.name" required></td>
 		</tr>
 		<tr>
-			<td>Gender</td><td>:</td>
+			<td style="height: 10px;"></td>
+		</tr>
+		<tr>
+			<td>Menarik</td><td>:</td>
 			<td>
-				<input type="radio" name="radioGender" ng-model="user.gender" value="Male" required> Male
-				<input type="radio" name="radioGender" ng-model="user.gender" value="Female" required> Female
+				<input type="radio" name="radioGender" ng-model="user.gender" value="Male" required> Ya
+				<input type="radio" name="radioGender" ng-model="user.gender" value="Female" required> Tidak
 			</td>
 		</tr>
 		<tr>
-			<td>Age</td><td>:</td>
+			<td style="height: 10px;"></td>
+		</tr>
+		<tr>
+			<td>Nilai</td><td>:</td>
 			<td><input type="number" name="ageInput" ng-model="user.age" required></td>
 		</tr>
 		<tr>
-		
-			<td>Address</td>
-			<td>:</td>
-			<td><textarea name="addressInput" ng-model="user.address" required></textarea></td>
+			<td style="height: 10px;"></td>
 		</tr>
 		<tr>
 			<td>email</td>
@@ -137,9 +143,24 @@
 			<td><input type="url" name="blogInput" ng-model="user.blog"></td>
 		</tr>
 		<tr>
+			<td style="height: 10px;"></td>
+		</tr>
+		<tr>
+		
+			<td>Kritik dan Saran</td>
+			<td>:</td>
+			<td><textarea name="addressInput" ng-model="user.address" required></textarea></td>
+		</tr>
+		<tr>
+			<td style="height: 10px;"></td>
+		</tr>
+		
+		<tr>
 			<td colspan="3">
-				<button ng-disabled="userForm.$invalid">Save</button>
+				<center>
+				<button ng-disabled="userForm.$invalid">Kirim</button>
 				<button ng-click="reset()">Reset</button>
+			</center>
 			</center>
 			</td>
 		</tr>
