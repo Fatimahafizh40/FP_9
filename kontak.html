@@ -69,11 +69,6 @@
   </div>
   
  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background-color: lightgrey;">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
 
 </head>
 <body ng-app="myApps">
@@ -101,13 +96,11 @@
 		$scope.isundefined = angular.isUndefined(unknown); //true
 	});
 </script>
-</html>
-<br>
 <br>
 <br>
 <div style="margin-left: 40px;">
 	<center>
-<p>KONTAK GALLION</p> 
+<h3><p>KONTAK GALLION</p></h3>
 <P>Untuk semua kritik dan saran, langsung tulis disini.</P>
 </center>
 <form name="userForm">
@@ -140,7 +133,7 @@
 		<tr>
 			<td>email</td>
 			<td>:</td>
-			<td><input type="url" name="blogInput" ng-model="user.blog"></td>
+			<td><input type="email" name="emailInput" ng-model="user.email"></td>
 		</tr>
 		<tr>
 			<td style="height: 10px;"></td>
@@ -149,7 +142,7 @@
 		
 			<td>Kritik dan Saran</td>
 			<td>:</td>
-			<td><textarea name="addressInput" ng-model="user.address" required></textarea></td>
+			<td><textarea name="addressInput" ng-model="user.address" required style="width: 180px;"></textarea></td>
 		</tr>
 		<tr>
 			<td style="height: 10px;"></td>
@@ -161,50 +154,18 @@
 				<button ng-disabled="userForm.$invalid">Kirim</button>
 				<button ng-click="reset()">Reset</button>
 			</center>
-			</center>
 			</td>
 		</tr>
 	</table>
 </form>
-<p>
-	
-<script type="text/javascript" >
-	var app = angular.module("myApps", []);
-	app.controller("registerCtrl", function($scope){
-		$scope.countries = ["Indonesia", "Singapore", "Malaysia", "Japan"];
-		$scope.defaultValue = {
-			name : "John Doe",
-			gender : "Male",
-			age : 20,
-			country : "Indonesia",
-			address : "Jln. Raya",
-			blog : "http://www.mahirkoding.com"
-		}
-		$scope.reset = function(){
-			$scope.user = angular.copy($scope.defaultValue);
-		}
-	});
-</script>
+</center></form></div>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
 
 <div class="card bg-secondary"  >
   <div class="card-header">
   </div>
 </div>
-
-
-
 
 <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
 <script src="assets/js/popper.min.js"></script>

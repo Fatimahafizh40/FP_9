@@ -11,21 +11,20 @@
 <body>
   <div class="p-3 mb-2 bg-secondary text-dark">
       <div class="container">
-  <div class="row">
-    <div class="col-sm">
-      
+      <div class="row">
+        <div class="col-sm">
+          
+        </div>
+        <div class="col-sm">
+          <h1 style="color: white;"><p class="text-center">GALLION</p></h1> 
+        </div>
+        <div class="col-sm">
+         
+        </div>
+      </div>
     </div>
-    <div class="col-sm">
-      <h1 style="color: white;"><p class="text-center">GALLION</p></h1> 
-    </div>
-    <div class="col-sm">
-     
-    </div>
-  </div>
-</div>
   </div>
 
-  <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -67,7 +66,6 @@
     </form>
   </div>
 </nav>
-  </div>
   <div style="margin-top: 30px;" ng-app="myApp" ng-controller="myCtrl">
 
 <p ng-bind-html="myText"></p>
@@ -77,15 +75,16 @@
 <script>
      var app = angular.module("myApp", ['ngSanitize']);
 app.controller("myCtrl", function($scope) {
-    $scope.myText = " <center> <h1>Tentang Kami</h1></center>" ;
+    $scope.myText = " <center> <h3>Tentang Kami</h3></center>" ;
 });
 </script>
 </div>
 <div style="margin-left: 40px;">
-<p>Kami adalah tiga orang mahasiswa yang mencoba untuk menyelesaikan tugas final project pemrograman web, dengan situs web tren fashion masa kini yang bertujuan untuk memudahkan para wanita untuk mengetahui tren fashion terkini. Semoga web ini bermanfaat bagi pengunjung.</p>    
+<p>Kami adalah tiga mahasiswi yang mencoba untuk menyelesaikan tugas final project pemrograman web, dengan situs web tren fashion masa kini yang bertujuan untuk memudahkan para wanita untuk mengetahui tren fashion terkini. Semoga web ini bermanfaat bagi pengunjung.</p>
+</div>    
 <br>
 
-   <div ng-app="myApp" ng-controller="myCtrl">
+<div ng-app="myApp" ng-controller="myCtrl">
 </div>
 <div class="card-group">
   <div class="card" style="border: none;">
@@ -114,24 +113,11 @@ app.controller("myCtrl", function($scope) {
   </div>
 </div>
 
-</div>
 
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="card bg-secondary"  >
+
+<div class="card bg-secondary">
   <div class="card-header">
   </div>
 </div>
