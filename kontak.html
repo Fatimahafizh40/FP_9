@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Kontak</title>
-	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="assets/js/angular.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 </head>
 <body>
@@ -103,7 +103,7 @@
 <h3><p>KONTAK GALLION</p></h3>
 <P>Untuk semua kritik dan saran, langsung tulis disini.</P>
 </center>
-<form name="userForm">
+<form name="userForm" method="post">
 	<center>
 	<table>
 		<tr>
@@ -151,8 +151,8 @@
 		<tr>
 			<td colspan="3">
 				<center>
-				<button ng-disabled="userForm.$invalid">Kirim</button>
-				<button ng-click="reset()">Reset</button>
+				<button ng-disabled="userForm.$invalid" id="kirim">Kirim</button>
+				<button type="reset" ng-click="reset()">Reset</button>
 			</center>
 			</td>
 		</tr>
@@ -166,8 +166,13 @@
   <div class="card-header">
   </div>
 </div>
-
 <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+<script>
+	console.log(jQuery);
+	$('#kirim').on('click', function(){
+		alert('terkirim');
+	})
+</script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/angular.min.js"></script>
